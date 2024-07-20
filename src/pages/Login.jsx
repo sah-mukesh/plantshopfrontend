@@ -185,7 +185,7 @@ const Login = () => {
                         type="button"
                         onClick={() => setShowPassword(!showPassword)}
                       >
-                        {/* <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} />
+                        <FontAwesomeIcon icon={showPassword ? faEye : faEyeSlash} />
                       </button>
                     </div>
                   </div>
@@ -193,7 +193,7 @@ const Login = () => {
                     <button className="btn btn-primary" type="submit" style={{ backgroundColor: '#6D6875', border: 'none' }}>Login</button>
                   </div>
                   <a href="/register" className="text-dark text-decoration-dark fw-bold" style={{ display: 'block', textAlign: 'center', marginTop: '10px', color: '#333' }}>
-                    Don't have an account? SignUp */}
+                    Don't have an account? SignUp
                   </a>
                 </form>
               </div>
