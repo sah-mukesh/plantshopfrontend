@@ -175,10 +175,10 @@ const OrderSummaryForm = () => {
             <button style={{ width: '100%', padding: '12px', margin: '5px 0', borderRadius: '8px', border: '1px solid #ddd', background: '#f9f9f9', fontSize: '14px' }}>Pay Online</button>
           </Link>
         </div>
-        <button onClick={handleOrderClick} style={{ width: '100%', padding: '12px', margin: '8px 0', borderRadius: '8px', border: 'none', background: '#000', color: '#fff', fontWeight: 'bold', fontSize: '16px' }}>Order</button>
+        {/* <button onClick={handleOrderClick} style={{ width: '100%', padding: '12px', margin: '8px 0', borderRadius: '8px', border: 'none', background: '#000', color: '#fff', fontWeight: 'bold', fontSize: '16px' }}>Order</button>
       </div>
     </div>
   );
 };
 
-export default OrderSummaryForm;
+export default OrderSummaryForm; */}
