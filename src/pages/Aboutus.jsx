@@ -41,10 +41,10 @@ const AboutUs = () => {
           >
             Learn More
           </button> */}
-        </div>
+        {/* </div>
       </div>
     </div>
   );
 };
 
-export default AboutUs;
+export default AboutUs; */}
