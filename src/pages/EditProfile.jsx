@@ -10,14 +10,14 @@ const EditProfile = () => {
   const [saveConfirmation, setSaveConfirmation] = useState(''); // State for showing save confirmation message
 
   // Function to handle saving the profile
-  const handleSaveProfile = () => {
-    // Here you can implement the logic to save the profile data
-    console.log('Profile saved:', { name, email, location, age, bio });
-    setSaveConfirmation('Changes saved successfully!'); // Set confirmation message
-    setTimeout(() => setSaveConfirmation(''), 5000); // Clear message after 5 seconds
-  };
+  // const handleSaveProfile = () => {
+  //   // Here you can implement the logic to save the profile data
+  //   console.log('Profile saved:', { name, email, location, age, bio });
+  //   setSaveConfirmation('Changes saved successfully!'); // Set confirmation message
+  //   setTimeout(() => setSaveConfirmation(''), 5000); // Clear message after 5 seconds
+  // };
 
-  return (
+  // return (
     <div style={{ width: '500px', margin: '0 auto', padding: '30px', border: '5px solid #ccc', borderRadius: '10px', backgroundColor: '#f9f9f9' }}>
       <h2 style={{ marginBottom: '20px', textAlign:'center', color:'black', fontWeight: 'bold' }}>Edit Profile</h2>
       <div style={{ marginBottom: '20px' }}>
