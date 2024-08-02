@@ -209,29 +209,29 @@ const Register = () => {
       2: { strength: "Medium", color: "yellow", percent: 75 },
       3: { strength: "Strong", color: "blue", percent: 100 },
       4: { strength: "Very Strong", color: "green", percent: 100 }
-  //   };
+    };
 
-  //   setPasswordStrength(strengthData[score] || { strength: "None", color: "black", percent: 0 });
+    setPasswordStrength(strengthData[score] || { strength: "None", color: "black", percent: 0 });
 
-  //   if (value.length < 8 || value.length > 12) {
-  //     setErrors((prevErrors) => ({
-  //       ...prevErrors,
-  //       password: 'Password must be between 8 and 12 characters long',
-  //     }));
-  //   } else if (
-  //     !/[A-Z]/.test(value) ||
-  //     !/[a-z]/.test(value) ||
-  //     !/\d/.test(value) ||
-  //     !/[!@#$%^&*]/.test(value)
-  //   ) {
-  //     setErrors((prevErrors) => ({
-  //       ...prevErrors,
-  //       password: 'Password must include uppercase, lowercase, number, and special character',
-  //     }));
-  //   } else {
-  //     setErrors((prevErrors) => ({ ...prevErrors, password: '' }));
-  //   }
-  // };
+    if (value.length < 8 || value.length > 12) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        password: 'Password must be between 8 and 12 characters long',
+      }));
+    } else if (
+      !/[A-Z]/.test(value) ||
+      !/[a-z]/.test(value) ||
+      !/\d/.test(value) ||
+      !/[!@#$%^&*]/.test(value)
+    ) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        password: 'Password must include uppercase, lowercase, number, and special character',
+      }));
+    } else {
+      setErrors((prevErrors) => ({ ...prevErrors, password: '' }));
+    }
+  };
 
   const changeConfirmPassword = (e) => {
     setConfirmPassword(e.target.value);
