@@ -141,23 +141,23 @@ const Cart = () => {
   }, [id]);
 
   // Add product to cart
-  // const addToCart = (product) => {
-  //   const updatedCart = cart.map((item) =>
-  //     item.productId && item.productId._id === product.productId._id
-  //       ? { ...item, quantity: item.quantity + 1 }
-  //       : item
-  //   );
-  //   setCart(updatedCart);
-  // };
+  const addToCart = (product) => {
+    const updatedCart = cart.map((item) =>
+      item.productId && item.productId._id === product.productId._id
+        ? { ...item, quantity: item.quantity + 1 }
+        : item
+    );
+    setCart(updatedCart);
+  };
 
-  // // Remove product from cart
-  // const removeFromCart = (product) => {
-  //   const updatedCart = cart.map((item) =>
-  //     item.productId && item.productId._id === product.productId._id && item.quantity > 1
-  //       ? { ...item, quantity: item.quantity - 1 }
-  //       : item
-  //   );
-  //   setCart(updatedCart);
+  // Remove product from cart
+  const removeFromCart = (product) => {
+    const updatedCart = cart.map((item) =>
+      item.productId && item.productId._id === product.productId._id && item.quantity > 1
+        ? { ...item, quantity: item.quantity - 1 }
+        : item
+    );
+    setCart(updatedCart);
   };
 
   // Calculate total price
