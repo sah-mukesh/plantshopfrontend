@@ -15,19 +15,19 @@ const ChangePassword = () => {
     setOldPassword(e.target.value);
   };
 
-  const changeNewPassword = (e) => {
-    setNewPassword(e.target.value);
-  };
+  // const changeNewPassword = (e) => {
+  //   setNewPassword(e.target.value);
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(oldPassword, newPassword);
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   console.log(oldPassword, newPassword);
 
-    const data = {
-      oldPassword: oldPassword,
-      newPassword: newPassword,
-      userId: userId
-    };
+  //   const data = {
+  //     oldPassword: oldPassword,
+  //     newPassword: newPassword,
+  //     userId: userId
+  //   };
 
     changePasswordApi(data)
       .then((res) => {
