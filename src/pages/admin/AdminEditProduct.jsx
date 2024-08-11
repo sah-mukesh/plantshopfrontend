@@ -144,21 +144,21 @@ const AdminEditProduct = () => {
   useEffect(() => {
     getSingleProductApi(id)
       .then((res) => {
-      //   if (res.data && res.data.product) {
-      //     const product = res.data.product;
-      //     setProductName(product.productName || '');
-      //     setProductPrice(product.productPrice || '');
-      //     setProductDescription(product.productDescription || '');
-      //     setProductCategory(product.productCategory || '');
-      //     setOldImage(product.productImageUrl || '');
-      //   } else {
-      //     toast.error('Product data not found');
-      //   }
-      // })
-      // .catch((err) => {
-      //   console.error(err);
-      //   toast.error('Failed to load product data');
-      // });
+        if (res.data && res.data.product) {
+          const product = res.data.product;
+          setProductName(product.productName || '');
+          setProductPrice(product.productPrice || '');
+          setProductDescription(product.productDescription || '');
+          setProductCategory(product.productCategory || '');
+          setOldImage(product.productImageUrl || '');
+        } else {
+          toast.error('Product data not found');
+        }
+      })
+      .catch((err) => {
+        console.error(err);
+        toast.error('Failed to load product data');
+      });
   }, [id]);
 
   // image upload function
