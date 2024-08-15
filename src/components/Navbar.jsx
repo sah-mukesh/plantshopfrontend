@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* <style>
+      <style>
         {`
           .banner {
             background-color: #e0f7fa;
@@ -44,7 +44,7 @@ const Navbar = () => {
             margin-top: 20px;
             max-width: 100%;
             height: auto;
-            border-radius: 10px; */}
+            border-radius: 10px;
           }
         `}
       </style>
